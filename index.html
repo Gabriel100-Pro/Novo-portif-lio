@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfólio | Gabriel Carlos Alexandre de Almeida - HTML, CSS, JavaScript, Git e GitHub." />
+  <title>Portfólio | Gabriel Carlos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header" id="topo">
+    <div class="container header__inner">
+      <a class="brand" href="#topo" aria-label="Ir para o topo">
+        <span class="brand__mark">&lt;/&gt;</span>
+        <span class="brand__name">GabrielCarlos.dev</span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="menu-btn__bars" aria-hidden="true"></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <section class="header__actions" aria-label="Ações do topo">
+        <nav class="nav" id="menu" aria-label="Navegação principal">
+          <a class="nav__link" href="#sobre">Sobre</a>
+          <a class="nav__link" href="#skills">Skills</a>
+          <a class="nav__link" href="#projetos">Projetos</a>
+          <a class="nav__link nav__cta" href="#contato">Contato</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="true" title="Alternar tema">
+          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+        </button>
+      </section>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="pill">Programador • Desenvolvedor Frontend</p>
+
+          <h1 class="hero__title">
+            Gabriel Carlos <span class="grad">Alexandre de Almeida</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Desenvolvedor com conhecimentos em <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>,
+            e versionamento com <strong>Git</strong> e <strong>GitHub</strong>.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projetos">Ver projetos</a>
+            <a class="btn btn--ghost" href="#contato">Falar comigo</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="meta-card">
+              <span class="meta-card__label">Stack</span>
+              <span class="meta-card__value">HTML • CSS • JS</span>
+            </div>
+            <div class="meta-card">
+              <span class="meta-card__label">Ferramentas</span>
+              <span class="meta-card__value">Git • GitHub</span>
+            </div>
+            <div class="meta-card">
+              <span class="meta-card__label">Foco</span>
+              <span class="meta-card__value">Front-end</span>
+            </div>
+          </div>
+
+          <div class="social">
+            <a class="social__link" href="https://github.com/Gabriel100-Pro" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="social__link" href="https://www.linkedin.com/in/gabrielcarlosalexandre" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="social__link" href="mailto:contato.gabrielalmeida10@gmail.com">Email</a>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-card__top">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="code-card__title">portfolio.js</span>
+            </div>
+<pre class="code-card__pre"><code>// mini resumo
+const skills = ["HTML", "CSS", "JavaScript", "Git", "GitHub"];
+
+function build() {
+  return {
+    foco: "UI limpa, responsiva e acessível",
+    versionamento: "boas práticas com commits e branches",
+    entrega: "deploy simples e documentação",
+  };
+}
+
+console.log(build());</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- MARQUEE: CORRIGIDO (agora a animação funciona) -->
+      <div class="container">
+        <section class="tool-marquee" aria-label="Tecnologias que eu uso">
+          <div class="tool-marquee__fade tool-marquee__fade--left" aria-hidden="true"></div>
+          <div class="tool-marquee__fade tool-marquee__fade--right" aria-hidden="true"></div>
+
+          <!-- IMPORTANTE: viewport + track + dois grupos iguais -->
+          <div class="tool-marquee__viewport">
+            <div class="tool-marquee__track" aria-hidden="false">
+              <div class="tool-marquee__group">
+                <img class="tool-marquee__img tool-marquee__img--wide" src="assets/item1-1.png" alt="JavaScript" loading="lazy">
+                <img class="tool-marquee__img tool-marquee__img--wide" src="assets/item1-10.png" alt="CSS" loading="lazy">
+                <img class="tool-marquee__img tool-marquee__img--wide" src="assets/item1-3.png" alt="JavaScript" loading="lazy">
+                <img class="tool-marquee__img tool-marquee__img--wide" src="assets/item1-6.png" alt="Git" loading="lazy">
+              </div>
+
+              <!-- duplicado para loop infinito -->
+              <div class="tool-marquee__group" aria-hidden="true">
+                <img class="tool-marquee__img tool-marquee__img--wide" src="assets/item1-1.png" alt="JavaScript" loading="lazy">
+                <img class="tool-marquee__img tool-marquee__img--wide" src="assets/item1-10.png" alt="CSS" loading="lazy">
+                <img class="tool-marquee__img tool-marquee__img--wide" src="assets/item1-3.png" alt="JavaScript" loading="lazy">
+                <img class="tool-marquee__img tool-marquee__img--wide" src="assets/item1-6.png" alt="Git" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          
+        </section>
+      </div>
+
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Sobre</h2>
+          <p class="section__desc">Um pouco sobre mim e como eu trabalho.</p>
+        </div>
+
+        <div class="about">
+          <div class="about__card">
+            <h3>Quem eu sou</h3>
+            <p>
+              Sou <strong>Gabriel Carlos Alexandre de Almeida</strong>, desenvolvedor front-end.
+              Gosto de transformar layouts em páginas funcionais, responsivas e bem organizadas.
+            </p>
+            <p>
+              No dia a dia uso <strong>Git</strong> para versionamento e <strong>GitHub</strong> para organizar repositórios,
+              projetos e deploy no GitHub Pages.
+            </p>
+          </div>
+
+          <div class="about__card">
+            <h3>Como eu entrego</h3>
+            <ul class="checklist">
+              <li>Layout responsivo (mobile-first)</li>
+              <li>CSS organizado (variáveis e componentes)</li>
+              <li>JavaScript para interações e validações</li>
+              <li>Commits claros e histórico limpo com Git</li>
+              <li>Deploy no GitHub Pages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__desc">Tecnologias e práticas que eu utilizo.</p>
+        </div>
+
+        <div class="skills">
+          <article class="skill">
+            <h3>HTML</h3>
+            <p>Semântica, SEO básico e estrutura limpa.</p>
+            <div class="tags">
+              <span class="tag">Semântico</span>
+              <span class="tag">SEO</span>
+              <span class="tag">A11y</span>
+            </div>
+          </article>
+
+          <article class="skill">
+            <h3>CSS</h3>
+            <p>Flex/Grid, responsividade e componentes reutilizáveis.</p>
+            <div class="tags">
+              <span class="tag">Flex</span>
+              <span class="tag">Grid</span>
+              <span class="tag">Mobile-first</span>
+            </div>
+          </article>
+
+          <article class="skill">
+            <h3>JavaScript</h3>
+            <p>DOM, fetch, validações e organização do código.</p>
+            <div class="tags">
+              <span class="tag">DOM</span>
+              <span class="tag">Fetch</span>
+              <span class="tag">ES6+</span>
+            </div>
+          </article>
+
+          <article class="skill">
+            <h3>Git & GitHub</h3>
+            <p>Branches, merges, PRs, issues e deploy.</p>
+            <div class="tags">
+              <span class="tag">Branches</span>
+              <span class="tag">PRs</span>
+              <span class="tag">GitHub Pages</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS: LINKS PEGOS DO SEU CV -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Projetos</h2>
+          <p class="section__desc">Links do meu CV.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project">
+            <div class="project__thumb" aria-hidden="true"></div>
+            <div class="project__body">
+              <h3>Projeto de Agendamento</h3>
+              <p>Aplicação publicada no GitHub Pages.</p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="https://gabriel100-pro.github.io/Projeto-de-Agendamento/" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__thumb project__thumb--2" aria-hidden="true"></div>
+            <div class="project__body">
+              <h3>Conversor de Moedas</h3>
+              <p>Conversor simples com interface responsiva.</p>
+              <div class="tags">
+                <span class="tag">JavaScript</span><span class="tag">DOM</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="https://gabriel100-pro.github.io/Conversor-de-Moedas/" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__thumb project__thumb--3" aria-hidden="true"></div>
+            <div class="project__body">
+              <h3>Site oficial InjetNobre</h3>
+              <p>Site institucional publicado.</p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="https://gabriel100-pro.github.io/Site-oficial-InjetNobre/" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__thumb" aria-hidden="true"></div>
+            <div class="project__body">
+              <h3>Projeto - Cafeteria</h3>
+              <p>Landing page temática.</p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="https://gabriel100-pro.github.io/Projeto---Cafeteria/" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__thumb project__thumb--2" aria-hidden="true"></div>
+            <div class="project__body">
+              <h3>Projeto Login</h3>
+              <p>Tela de login com UI moderna.</p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="https://gabriel100-pro.github.io/Projeto-Login-/" target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="callout">
+          <p>Quer ver mais? Meu GitHub tem outros repositórios e desafios.</p>
+          <a class="btn btn--primary" href="https://github.com/Gabriel100-Pro" target="_blank" rel="noreferrer">Abrir GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__info">
+            <h2>Vamos conversar?</h2>
+            <p class="muted">Me chame para freelas, vagas ou parcerias.</p>
+
+            <div class="contact__cards">
+              <a class="contact-card" href="mailto:contato.gabrielalmeida10@gmail.com">
+                <span class="contact-card__label">Email</span>
+                <span class="contact-card__value">contato.gabrielalmeida10@gmail.com</span>
+              </a>
+
+              <a class="contact-card" href="https://github.com/Gabriel100-Pro" target="_blank" rel="noreferrer">
+                <span class="contact-card__label">GitHub</span>
+                <span class="contact-card__value">@Gabriel100-Pro</span>
+              </a>
+
+              <a class="contact-card" href="https://www.linkedin.com/in/gabrielcarlosalexandre" target="_blank" rel="noreferrer">
+                <span class="contact-card__label">LinkedIn</span>
+                <span class="contact-card__value">/in/gabrielcarlosalexandre</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="form" action="#" method="post">
+            <h3>Mensagem</h3>
+            <label class="field">
+              <span>Nome</span>
+              <input name="nome" type="text" placeholder="Seu nome" autocomplete="name" required />
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input name="email" type="email" placeholder="seuemail@exemplo.com" autocomplete="email" required />
+            </label>
+
+            <label class="field">
+              <span>Mensagem</span>
+              <textarea name="mensagem" rows="5" placeholder="Me conte sobre o projeto..." required></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit">Enviar</button>
+            <p class="form__hint muted">
+              Dica: publique com Formspree/Getform, ou crie um backend.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© <span id="ano"></span> Gabriel Carlos. Feito com HTML, CSS e JS.</p>
+      <a class="link" href="#topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
