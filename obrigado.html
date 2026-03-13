@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mensagem enviada com sucesso." />
+  <title>Obrigado | Gabriel Carlos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header" id="topo">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Ir para o início">
+        <span class="brand__mark">&lt;/&gt;</span>
+        <span class="brand__name">GabrielCarlos.dev</span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="menu-btn__bars" aria-hidden="true"></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <section class="header__actions" aria-label="Ações do topo">
+        <nav class="nav" id="menu" aria-label="Navegação principal">
+          <a class="nav__link" href="index.html#sobre">Sobre</a>
+          <a class="nav__link" href="index.html#skills">Skills</a>
+          <a class="nav__link" href="index.html#projetos">Projetos</a>
+          <a class="nav__link nav__cta" href="index.html#contato">Contato</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="true" title="Alternar tema">
+          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+        </button>
+      </section>
+    </div>
+  </header>
+
+  <main id="conteudo" class="section">
+    <div class="container">
+      <div class="contact" style="grid-template-columns: 1fr; max-width: 760px; margin: 0 auto;">
+        <div class="contact__info">
+          <h1 class="section__title">Mensagem enviada com sucesso ✅</h1>
+          <p class="section__desc">Obrigado pelo contato. Recebi sua mensagem e vou responder no e-mail informado.</p>
+
+          <div class="hero__actions" style="margin-top: 24px;">
+            <a class="btn btn--primary" href="index.html#contato">Enviar outra mensagem</a>
+            <a class="btn btn--ghost" href="index.html">Voltar ao início</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© <span id="ano"></span> Gabriel Carlos. Feito com HTML, CSS e JS.</p>
+      <a class="link" href="#topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

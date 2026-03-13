@@ -339,8 +339,13 @@ console.log(build());</code></pre>
             </div>
           </div>
 
-          <form class="form" action="#" method="post">
+          <form class="form" action="https://formsubmit.co/contato.gabrielalmeida10@gmail.com" method="post">
             <h3>Mensagem</h3>
+            <input type="hidden" name="_subject" value="Nova mensagem enviada pelo portfólio">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" id="form-next-url" name="_next" value="">
+
             <label class="field">
               <span>Nome</span>
               <input name="nome" type="text" placeholder="Seu nome" autocomplete="name" required />
@@ -358,7 +363,7 @@ console.log(build());</code></pre>
 
             <button class="btn btn--primary" type="submit">Enviar</button>
             <p class="form__hint muted">
-              Dica: publique com Formspree/Getform, ou crie um backend.
+              No primeiro envio, confirme o e-mail de ativação do FormSubmit para liberar os próximos envios.
             </p>
           </form>
         </div>
